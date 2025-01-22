@@ -1,28 +1,18 @@
-/* CSS untuk memastikan elemen tidak ada padding/margin */
-* {
+/* Menjaga body agar tidak ada margin dan padding */
+body, html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body, html {
   height: 100%;
-  overflow: hidden;
+  overflow: hidden; /* Menyembunyikan scroll bar */
+  background-color: #000; /* Warna latar belakang hitam */
 }
 
-/* Canvas yang menutupi seluruh layar */
-canvas {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
+/* Set canvas agar memenuhi layar */
 #alx {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  display: block; /* Menghapus margin default */
 }
-

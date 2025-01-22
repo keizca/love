@@ -1,11 +1,17 @@
 var c = document.getElementById('alx');
-var b = document.body;
 var a = c.getContext('2d');
+
+// Cek apakah canvas berhasil diambil
+console.log("Canvas ditemukan:", c);
 
 var e = [];
 var h = [];
-var WIDTH = c.width = window.innerWidth; // Responsif terhadap ukuran layar
-var HEIGHT = c.height = window.innerHeight; // Responsif terhadap ukuran layar
+var WIDTH = c.width = window.innerWidth;
+var HEIGHT = c.height = window.innerHeight;
+
+// Cek ukuran canvas
+console.log("Ukuran Canvas: ", WIDTH, HEIGHT);
+
 var v = 4 + 2; // Mengurangi jumlah partikel lebih banyak
 var R = Math.random;
 var C = Math.cos;
@@ -59,6 +65,7 @@ function path(d) {
 window.addEventListener('resize', function() {
   WIDTH = c.width = window.innerWidth;
   HEIGHT = c.height = window.innerHeight;
+  console.log("Ukuran setelah resize:", WIDTH, HEIGHT);  // Cek ukuran canvas setelah resize
 });
 
 function animate() {

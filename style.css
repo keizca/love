@@ -1,5 +1,19 @@
-body
-{ 
-  padding: 0;
+/* CSS untuk memastikan elemen tidak ada padding/margin */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Canvas yang menutupi seluruh layar */
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

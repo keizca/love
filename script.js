@@ -36,7 +36,7 @@ for (var i = 0; i < v;) {
       y: y,
       X: 0,
       Y: 0,
-      R: 0.005 - k / v + 0.005, // Ukuran partikel lebih kecil
+      R: 0.0001 - k / v + 0.0001, // Ukuran partikel lebih kecil
       S: R() + 1,
       q: ~~(R() * v),
       D: 2 * (i % 2) - 1,

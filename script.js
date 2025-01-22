@@ -6,7 +6,7 @@ var e = [];
 var h = [];
 var WIDTH = c.width = window.innerWidth; // Responsif terhadap ukuran layar
 var HEIGHT = c.height = window.innerHeight; // Responsif terhadap ukuran layar
-var v = 32 + 16 + 8;
+var v = 16 + 4; // Mengurangi jumlah partikel lebih banyak
 var R = Math.random;
 var C = Math.cos;
 var Y = 6.3;
@@ -36,7 +36,7 @@ for (var i = 0; i < v;) {
       y: y,
       X: 0,
       Y: 0,
-      R: 1 - k / v + 1, // Ukuran partikel yang lebih kecil
+      R: 0.3 - k / v + 0.3, // Ukuran partikel lebih kecil
       S: R() + 1,
       q: ~~(R() * v),
       D: 2 * (i % 2) - 1,
@@ -99,4 +99,4 @@ setInterval(function () {
       path(N);
     }
   }
-}, 25);
+}, 40); // Menurunkan kecepatan animasi sedikit lebih lambat untuk responsif

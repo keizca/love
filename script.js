@@ -6,7 +6,7 @@ var e = [];
 var h = [];
 var WIDTH = c.width = window.innerWidth; // Responsif terhadap ukuran layar
 var HEIGHT = c.height = window.innerHeight; // Responsif terhadap ukuran layar
-var v = 8 + 4; // Mengurangi jumlah partikel lebih banyak
+var v = 4 + 2; // Mengurangi jumlah partikel lebih banyak
 var R = Math.random;
 var C = Math.cos;
 var Y = 6.3;
@@ -36,7 +36,7 @@ for (var i = 0; i < v;) {
       y: y,
       X: 0,
       Y: 0,
-      R: 0.1 - k / v + 0.1, // Ukuran partikel lebih kecil
+      R: 0.05 - k / v + 0.05, // Ukuran partikel lebih kecil
       S: R() + 1,
       q: ~~(R() * v),
       D: 2 * (i % 2) - 1,

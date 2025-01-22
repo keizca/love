@@ -36,12 +36,12 @@ for (var i = 0; i < v;) {
       y: y,
       X: 0,
       Y: 0,
-      R: 1 - k / v + 1,
+      R: 1 - k / v + 1, // Ukuran partikel yang lebih kecil
       S: R() + 1,
       q: ~~(R() * v),
       D: 2 * (i % 2) - 1,
       F: 0.2 * R() + 0.7,
-      f: "hsla(0, 100%, 50%, .6)"
+      f: "hsla(0, 100%, 50%, .6)" // Mengubah warna menjadi merah
     };
   }
   e[i++] = f;
